@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="slogan">Where</string>
+    <string name="slogan1">the Inspiration</string>
+    <string name="slogan2">Begins</string>
+    <string name="name">Udacity</string>
+    <string name="data">2465 Latham St \nMountain View, CA 94043</string>
+    <string name="phone">650-555-5555</string>
+    <string name="page">www.udacity.com</string>
+    <string name="door">door</string>
+    <string name="logo">logo</string>
+    <string name="id">id</string>
+    <string name="location">location</string>
+    <string name="number">phone</string>
+    <string name="webpage">webpage</string>
+</resources>

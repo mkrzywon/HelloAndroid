@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackgroud">
+
+    <ImageView
+        android:id="@+id/door"
+        android:src="@drawable/door"
+        style="@style/style5"
+        android:contentDescription="@string/door"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/udacity_logo3"
+        style="@style/style5"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/logo"/>
+
+    <TextView
+        android:id="@+id/slogan"
+        android:text="@string/slogan"
+        style="@style/style4"
+        android:layout_alignEnd="@id/door" />
+
+    <TextView
+        android:id="@+id/slogan1"
+        android:text="@string/slogan1"
+        style="@style/style4"
+        android:layout_below="@id/slogan"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/slogan2"
+        android:text="@string/slogan2"
+        style="@style/style4"
+        android:layout_below="@id/slogan1"
+        android:layout_toStartOf="@id/logo"
+        android:layout_marginEnd="36dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignBottom="@id/door"
+        android:layout_alignEnd="@id/logo"
+        android:layout_marginEnd="36dp">
+
+        <LinearLayout
+            style="@style/style3"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/idcard"
+                android:src="@drawable/name"
+                style="@style/style1"
+                android:scaleType="center"
+                android:contentDescription="@string/id"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:text="@string/name"
+                android:textAllCaps="true"
+                style="@style/style2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style3"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/address"
+                android:src="@drawable/location"
+                style="@style/style1"
+                android:scaleType="center"
+                android:contentDescription="@string/location"/>
+
+            <TextView
+                android:id="@+id/data"
+                android:text="@string/data"
+                android:autoLink="map"
+                android:textColorLink="@color/colorlink"
+                style="@style/style2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style3"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/telephone"
+                android:src="@drawable/phone"
+                style="@style/style1"
+                android:scaleType="center"
+                android:contentDescription="@string/number"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:text="@string/phone"
+                android:autoLink="phone"
+                android:textColorLink="@color/colorlink"
+                style="@style/style2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style3"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/www"
+                android:src="@drawable/www"
+                style="@style/style1"
+                android:scaleType="center"
+                android:contentDescription="@string/webpage"/>
+
+            <TextView
+                android:id="@+id/webpage"
+                android:text="@string/page"
+                android:autoLink="web"
+                android:textColorLink="@color/colorlink"
+                style="@style/style2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
