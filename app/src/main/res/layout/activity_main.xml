@@ -34,7 +34,7 @@
         android:text="@string/slogan1"
         style="@style/style4"
         android:layout_below="@id/slogan"
-        android:layout_alignParentEnd="true" />
+        android:layout_toEndOf="@id/door" />
 
     <TextView
         android:id="@+id/slogan2"
