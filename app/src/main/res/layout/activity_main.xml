@@ -42,7 +42,8 @@
         style="@style/style4"
         android:layout_below="@id/slogan1"
         android:layout_toEndOf="@id/door"
-        android:layout_marginStart="36dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"/>
 
 
     <LinearLayout
